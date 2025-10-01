@@ -1,0 +1,80 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+@property --startColor {
+  syntax: "<color>";
+  initial-value: white;
+  inherits: false;
+}
+
+@property --endColor {
+  syntax: "<color>";
+  initial-value: black;
+  inherits: false;
+}
+
+@keyframes gradient {
+
+  0%,
+  100% {
+    --startColor: red;
+    --endColor: gray;
+  }
+
+  30% {
+    --startColor: green;
+    --endColor: white;
+  }
+
+  80% {
+    --startColor: yellow;
+    --endColor: black;
+  }
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes spin {
+  0% {
+    --angle: 0deg;
+  }
+
+  100% {
+    --angle: 360deg;
+  }
+}
+
+body {
+  background-color: black;
+  font-size: 10px;
+}
+
+main {
+  width: 100%;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+article {
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+
+.squares {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}

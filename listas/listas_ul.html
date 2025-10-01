@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Listado ordenado custom</title>
+  <style>
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .numero {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: #2563eb;
+      color: white;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .contenido {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .contenido p:first-child {
+      font-weight: bold;
+      margin: 0;
+    }
+
+    .contenido p:last-child {
+      color: #555;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <ol>
+    <li>
+      <span class="numero">1</span>
+      <div class="contenido">
+        <p>Paso 1.</p>
+        <p>Registro de usuario.</p>
+      </div>
+    </li>
+
+    <li>
+      <span class="numero">2</span>
+      <div class="contenido">
+        <p>Paso 2.</p>
+        <p>Confirmación por correo.</p>
+      </div>
+    </li>
+
+    <li>
+      <span class="numero">3</span>
+      <div class="contenido">
+        <p>Paso 3.</p>
+        <p>Acceso a la plataforma.</p>
+      </div>
+    </li>
+  </ol>
+
+</body>
+</html>

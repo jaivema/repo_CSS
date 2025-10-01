@@ -1,0 +1,66 @@
+@import url(reset.css);
+@import url(patterns.css);
+:root {
+	--siroco: #678281;
+}
+html {
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    background: var(--background-circle11);
+}
+body {
+    background: var(--background-circle11);
+    display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+    background-clip: content-box;
+    margin:0 2rem;
+    border-left:1px solid white;
+    border-right:1px solid white;
+}
+header {
+    color:white;
+    text-align: center;
+	background-color: var(--siroco);
+	padding: 1rem;
+    margin-top:1rem;
+    border-top:1px solid white;
+    border-bottom:1px solid white;
+}
+.main__cards{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:1rem;
+}
+.cards__mifondo{
+    height:250px;
+    width:250px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+}
+.cards__mifondo-modern{
+    background-image:url(modern.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+.cards__mifondo-roca{
+    background-image:url(roca.jpg);
+    background-size:50px 50px;    
+}
+.mifondo__square{
+    height:150px;
+    width:150px;
+    backdrop-filter: sepia(100%);
+    text-align: center;
+    padding:1rem;
+}
+footer {
+    border-top:1px solid white;
+    background-color: var(--siroco);
+}
+footer p{
+    padding:0 1rem;
+    text-align:end;
+}

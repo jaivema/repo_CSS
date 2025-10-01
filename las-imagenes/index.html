@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="index.css" />
+		<title>CSS - imagenes</title>
+	</head>
+	<body>
+		<div class="layout">
+			<header class="layout__header">
+				<h1>Conceptos de CSS</h1>
+				<h2 class="sticky">Las imágenes</h2>
+			</header>
+			<main>
+				<article>
+					<header class="article__header">
+						<h2>object-fit</h2>
+						<p>Establece como se ajusta una imagen dentro de un contenedor.</p>
+						<blockquote>El valor por defecto es fill.</blockquote>
+					</header>
+
+					<section>
+						<h3>Valores disponibles</h3>
+						<ul>
+							<li>
+								<dfn>fill</dfn>: Esta es la configuración predeterminada. La
+								imagen se redimensiona para ajustarse a la dimensión
+								especificada. Si es necesario, se estira o se comprime para
+								ajustarla.
+							</li>
+							<li>
+								<dfn>contain</dfn>: La imagen mantiene su relación de aspecto,
+								pero se redimensiona para ajustarse a la dimensión dada.
+							</li>
+							<li>
+								<dfn>cover</dfn>: La imagen mantiene su relación de aspecto y
+								ocupa la dimensión indicada. La imagen se recortará para
+								ajustarse.
+							</li>
+							<li><dfn>none</dfn>: La imagen no se redimensiona.</li>
+							<li>
+								<dfn>scale-down</dfn>: la imagen se reduce a la versión más
+								pequeña de <code>none</code> o <code>contain</code>.
+							</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Tabla de valores</h3>
+						<table>
+							<thead>
+								<tr>
+									<th>Propiedad</th>
+									<th>Valores</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>object-fit</td>
+									<td>fill | contain | cover | none | scale-down</td>
+								</tr>
+							</tbody>
+						</table>
+                        <footer class="article__footer">
+                            <p>
+                                <a href="https://www.w3schools.com/cssref/playdemo.php?filename=playcss_object-fit">
+                                    w3schools - object-fit
+                                </a>
+                            </p>
+                        </footer>
+					</section>
+				</article>
+				<article>
+					<header class="article__header">
+						<h2>object-position</h2>
+						<p>Establece la posición de una imagen dentro de un contenedor.</p>
+						<blockquote>El valor por defecto es 50% 50%.</blockquote>
+					</header>
+                    <footer class="article__footer">
+                        <p>
+                            <a href="https://www.w3schools.com/cssref/playdemo.php?filename=playcss_object-position">
+                                w3schools - object-position
+                            </a>
+                        </p>
+                    </footer>
+				</article>
+			</main>
+		</div>
+	</body>
+</html>

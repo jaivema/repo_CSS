@@ -1,0 +1,32 @@
+body{
+    display:flex;
+
+}
+
+.layout{
+    margin:0 auto;
+}
+
+
+
+table.named-color-table thead th { text-align:center; background:var(--text); color:var(--bg); }
+table.named-color-table th, table.named-color-table td { padding: 0 .25em; }
+table.named-color-table td { text-align:center; text-transform:uppercase; }
+table.named-color-table td:nth-child(-n+2) { border:1px solid var(--text); }
+/* table.named-color-table td:nth-child(n+4) { background: ; } */
+.color-table {
+	background: rgb(46.63% 46.63% 46.63%);
+	color: black;
+	display: table;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	padding: 0.5em;
+	gap: 2em;
+}
+.color-table table { padding:1em; margin:0; table-layout: fixed; }
+.color-table td, .color-table th { font-size:smaller; }
+.color-table th { white-space: pre-line; }
+.color-table td {	padding: .75em; }
+.color-table .white { color: white; }
+.color-table .black { color: black; }

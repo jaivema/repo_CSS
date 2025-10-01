@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+	--primary: #2a2c2a;
+	--secondary: #f86a28;
+	--background: #ccc;
+}
+html{
+    font-size: 10px;
+}
+body {
+	min-height: 100dvh;
+	background-color: var(--background);
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.layout {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100dvh;
+	color: var(--primary);
+	padding: 4rem;
+}

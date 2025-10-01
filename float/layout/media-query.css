@@ -1,0 +1,26 @@
+@media (max-width: 900px) {
+	section.main__aside {
+		width: 100%;
+		background-color: #666666aa;
+		padding: 0;
+	}
+	section.main__aside ul {
+		text-align: center;
+		padding: 10px;
+	}
+	section.main__aside ul li {
+		display: inline;
+		background-color: #ccc;
+		padding: 10px;
+	}
+	article {
+		width: 100%;
+	}
+}
+@media (max-width: 600px) {
+	figure {
+		width: 100%;
+		margin:10px auto;
+		background-color: transparent;
+	}
+}

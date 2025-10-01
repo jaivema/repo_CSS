@@ -1,0 +1,42 @@
+.square--1 {
+  height: 100%;
+  border-radius: 5px;
+  background-image: conic-gradient(from var(--angle),
+      gray, black, gray);
+}
+
+.square--1:hover {
+  animation: 1s spin linear infinite;
+}
+
+.square--2 {
+  height: 100%;
+  border-radius: 5px;
+  background-image: linear-gradient(var(--angle),
+      gray, black, gray);
+}
+
+.square--2:hover {
+  animation: 1s spin linear infinite;
+}
+
+.square--3 {
+  height: 100%;
+  border-radius: 5px;
+  background-image: linear-gradient( var(--startColor), var(--endColor));
+}
+
+.square--3:hover {
+  animation: 4s gradient linear infinite;
+}
+
+.square--4 {
+  height: 100%;
+  border-radius: 5px;
+  background-image: radial-gradient( ellipse at right,
+      var(--startColor), var(--endColor), var(--startColor));
+}
+
+.square--4:hover {
+  animation: 4s gradient linear infinite;
+}

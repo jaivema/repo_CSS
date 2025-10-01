@@ -1,0 +1,26 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+section{
+    display: flex;
+    gap:10px;
+}
+.pulser {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: red;
+    transition-duration: 1s;
+    transition-property: box-shadow, scale, background-color;
+    /* transition-timing-function: steps(10); */
+    transition-timing-function: cubic-bezier(1,-0.31, 0, 1.41);
+}
+.pulser:hover{
+    scale:5;
+    background-color: green;
+    border: 2px solid blueviolet;
+    box-shadow: 0px 0px 25px 10px purple;
+}

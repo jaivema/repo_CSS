@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="index.css" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Flexbox</title>
+	</head>
+
+	<body>
+		<header>
+			<h1>Flexbox</h1>
+			<h2>Básicos</h2>
+			<p>
+				<i
+					>Es un módulo de CSS creado para diseñar layouts de una manera más
+					sencilla, gracias a su flexibidad.</i
+				>
+			</p>
+		</header>
+		<main>
+			<section>
+				<article>
+					<ul>
+						<li>
+							<h3>Propiedades</h3>
+							<table>
+								<thead>
+									<th>Propiedad</th>
+									<th>Valor</th>
+								</thead>
+								<tbody>
+									<tr>
+										<td><code>display</code></td>
+										<td>flex</td>
+									</tr>
+									<tr>
+										<td><code>flex-direction</code></td>
+										<td>row | column | row-reverse | column-reverse</td>
+									</tr>
+									<tr>
+										<td><code>flex-wrap</code></td>
+										<td>wrap | wrap-reverse | nowrap</td>
+									</tr>
+									<tr>
+										<td><code>flex-flow</code></td>
+										<td>&ltflex-direction&gt || &ltwrap&gt</td>
+									</tr>
+									<tr>
+										<td><code>justify-content</code> (main-axis)</td>
+										<td>
+											center | space-evenly | space-between |space-around |
+											space-evenly | flex-start | flex-end
+										</td>
+									</tr>
+									<tr>
+										<td><code>align-items</code> (cross-axis)</td>
+										<td>center | flex-start | flex-end | baseline | stretch</td>
+									</tr>
+									<tr>
+										<td>
+											<code>align-content</code> (cross-axis, solo si existe la
+											propiedad wrap)
+										</td>
+										<td>
+											center | space-evenly | space-between space-around |
+											space-evenly | flex-start | flex-end
+										</td>
+									</tr>
+									<tr>
+										<td><code>align-self</code> (cross-axis)</td>
+										<td>
+											auto | flex-start | flex-end | center | baseline | stretch
+										</td>
+									</tr>
+									<tr>
+										<td rowspan="2"><code>flex</code> (shorthand)</td>
+										<td>
+											&ltflex-grow&gt || &ltflex-shrink&gt || &ltflex-basis&gt
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<ul style="list-style: square">
+												<li><code>flex-grow</code>: &ltnumber&gt</li>
+												<li><code>flex-shrink</code>: &ltnumber&gt</li>
+												<li><code>flex-basis</code>: &ltlength&gt | auto</li>
+											</ul>
+										</td>
+									</tr>
+									<tr>
+										<td rowspan="2"><code>order</code></td>
+										<td>&ltinteger&gt</td>
+									</tr>
+									<tr>
+										<td>
+											El valor por defecto es 0 e indica el orden de los
+											elementos
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</li>
+					</ul>
+				</article>
+				<article>
+					<ul>
+						<li>
+							<h2>Declarando Flexbox</h2>
+							<ul>
+								<li>
+									<p>Opera mediante contenedores(padre) e items(hijos)</p>
+								</li>
+								<li>
+									<p>
+										En el contenedor se declara la pripoedad
+										<code>display:flex</code>
+									</p>
+								</li>
+								<li>
+									<p>
+										Por defecto, las propiedades se inicializan en
+										<code>row</code> y siempre pordemos cambiar la orientación
+									</p>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</article>
+				<article>
+					<ul>
+						<li>
+							<h2>Los ejes en Flexbox</h2>
+							<ul>
+								<li>
+									<p>
+										Al entrar al modo flexbox, se crean dos ejes principales:
+										<b>Cross-axis</b> y
+										<b>Main-axis</b>
+									</p>
+								</li>
+								<li>
+									<p>
+										El cross axis se refiere a la orientación perpendicular al
+										main axis. Por ejemplo, si el main axis es el eje X, el
+										cross axis sería el eje Y.
+									</p>
+								</li>
+								<li>
+									<p>
+										El main axis se refiere a la orientación principal del
+										contenedor. Por ejemplo, si el main axis es el eje X, el
+										cross axis sería el eje Y.
+									</p>
+								</li>
+								<ul>
+									<li>
+										<h3>Flex-direction</h3>
+										<article id="flex-direction">
+											<figure>
+												<img src="img/direction/row.png" alt="flex-row" />
+												<figcaption>flex-row</figcaption>
+											</figure>
+											<figure>
+												<img src="img/direction/column.png" alt="flex-column" />
+												<figcaption>flex-column</figcaption>
+											</figure>
+											<figure>
+												<img
+													src="img/direction/row-reverse.png"
+													alt="flex-row-reverse"
+												/>
+												<figcaption>flex-row-reverse</figcaption>
+											</figure>
+											<figure>
+												<img
+													src="img/direction/column-reverse.png"
+													alt="flex-column-reverse"
+												/>
+												<figcaption>flex-column-reverse</figcaption>
+											</figure>
+										</article>
+									</li>
+									<li>
+										<h3>Flex wrap</h3>
+										<ul>
+											<li>
+												<p>
+													Define el comportamiento de los flex-items cuando su
+													tamaño sumado rebasa el tamaño del main-axis
+												</p>
+											</li>
+											<li>
+												<p>
+													Permite que los items se envuelvan en la orientación
+													principal del contenedor.
+												</p>
+											</li>
+											<li>
+												<p>
+													El valor por defecto es <code>nowrap</code>, lo que
+													significa que si los elementos sopasan el tamaño del
+													flex container, los items se encogen.
+												</p>
+											</li>
+											<li>
+												<p>
+													El valor <code>wrap</code> creará una nueva línea
+													cuando los elementos sobrepasen el tamaño del
+													contenedor del main-axis. Dependiendo de la
+													orientación.en fila o columna.
+												</p>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</ul>
+						</li>
+					</ul>
+				</article>
+				<article>
+					<ul>
+						<li>
+							<h2>Alineamiento en Flexbox</h2>
+							<ul>
+								<li>
+									<p>
+										En Flexbox se puede repartir el espacio disponible tanto en
+										el main como en el cross. Esto es el alineamiento.
+									</p>
+								</li>
+								<li>
+									<p>
+										Para aplicar el alineamiento debe haber espacio disponible
+										en el eje que opere, de lo contrario no surte efecto.
+									</p>
+								</li>
+								<ul>
+									<li>
+										<h3>Alineación</h3>
+									</li>
+									<li><code>justify-content</code> eje principal</li>
+									<li><code>align-items</code> eje secundario</li>
+									<li>
+										<code>align-content</code> eje secundario. Cuando hay
+										<code>wrap</code> en el contenedor, es decir, cuando el
+										contenedor tiene envoltorio.
+									</li>
+								</ul>
+							</ul>
+						</li>
+					</ul>
+				</article>
+			</section>
+		</main>
+	</body>
+</html>

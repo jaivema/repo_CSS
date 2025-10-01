@@ -1,0 +1,66 @@
+@import url(https://fonts.googleapis.com/css?family=Sixtyfour+Convergence);
+
+:root {
+  /* --color-font: violet; */
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-palette-values --firstPalette {
+  font-family: "Sixtyfour Convergence";
+  override-colors: 0 yellow, 1 green;
+}
+
+@font-palette-values --secondPalette {
+  font-family: "Sixtyfour Convergence";
+  override-colors: 0 red, 1 black;
+}
+
+h1 {
+  --_color-font: var(--color-font, red);
+  color: var(--_color-font);
+}
+
+h2 {
+  font-family: "Sixtyfour Convergence";
+  font-size: 30px;
+}
+
+.alt1 {
+  font-palette: --firstPalette;
+}
+
+.alt2 {
+  font-palette: --secondPalette;
+}
+
+body {
+  min-height: 100dvh;
+}
+
+main {
+  border: 1px solid;
+  margin: auto;
+  position: relative;
+  width: auto;
+  height: 100dvh;
+  text-align: center;
+}
+
+article {
+  border: 1px solid;
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  inset: 0;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 40px;
+}

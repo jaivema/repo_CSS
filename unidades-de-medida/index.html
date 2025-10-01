@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>CSS - Unidades de medida</title>
+</head>
+
+<body>
+    <header>
+        <h1>Conceptos</h1>
+        <h2>Unidades de medida en CSS</h2>
+    </header>
+    <main>
+        <section>
+            <article class="article-column">
+                <ul>
+                    <li>Absolutas: estas medidas no cambian de tamaño, siempre son iguales independientemente del tamaño
+                        de
+                        pantalla.</li>
+                    <li>Relativas: Se adaptan según el tamaño de la pantalla, son las medidas más recomendadas de usar.
+                    </li>
+                </ul>
+            </article>
+            <article class="article-column">
+                <h3><i>Medidas Relativas</i></h3>
+                <table>
+                    <thead>
+                        <th>Unidad</th>
+                        <th>Relativa a</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>em</td>
+                            <td>Esta propiedad depende el font-size del elemento padre.</td>
+                        </tr>
+                        <tr>
+                            <td>rem</td>
+                            <td>Esta propiedad depende el font-size del elemento raíz (seria la etiqueta html).</td>
+                        </tr>
+                        <tr>
+                            <td>vh</td>
+                            <td>Altura de la ventana del navegador.</td>
+                        </tr>
+                        <tr>
+                            <td>vw</td>
+                            <td>Ancho de la ventana del navegador.</td>
+                        </tr>
+                        <tr>
+                            <td>%</td>
+                            <td>Tamaño relativo al elemento padre</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3"><i>Las medidas relativas más usadas son los rems, ems y porcentajes.</i>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </article>
+            <article class="article-column">
+                <h3><i>Medidas Absolutas</i></h3>
+                <table>
+                    <th>Unidad</th>
+                    <th>Nombre</th>
+                    <th>Medida(px)</th>
+                    <th>Uso actual</th>
+                    <tbody>
+                        <tr>
+                            <td>cm</td>
+                            <td>Centímetros</td>
+                            <td>96px/2.54 = 37.79px</td>
+                            <td>Apenas no es usado</td>
+                        </tr>
+                        <tr>
+                            <td>mm</td>
+                            <td>Milímetros</td>
+                            <td>1cm(~37.8)/10 = 3.77px </td>
+                            <td>Apenas no es usado</td>
+                        </tr>
+                        <tr>
+                            <td>in</td>
+                            <td>Pulgadas</td>
+                            <td>96px</td>
+                            <td>Apenas no es usado</td>
+                        </tr>
+                        <tr>
+                            <td>pt</td>
+                            <td>Puntos</td>
+                            <td>1.33px</td>
+                            <td>Apenas no es usado</td>
+                        </tr>
+                        <tr>
+                            <td>pc</td>
+                            <td>Picas</td>
+                            <td>16px</td>
+                            <td>Apenas no es usado</td>
+                        </tr>
+                        <tr>
+                            <td>px</td>
+                            <td>Píxeles</td>
+                            <td>1px</td>
+                            <td>Muy usado</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+            <article>
+                <h2>Imágenes</h2>
+                <h3><i>object-fit</i></h3>
+                <p><i>Establece como se ajusta una imagen dentro de un contenedor.</i></p>
+                <p>El valor por defecto es fill.</p>
+                <ul>
+                    <li>fill: Esta es la configuración predeterminada. La imagen se redimensiona para ajustarse a la dimensión especificada. Si es necesario, se estira o se comprime para ajustarla.</li>
+                    <li>contain: La imagen mantiene su relación de aspecto, pero se redimensiona para ajustarse a la dimensión dada.</li>
+                    <li>cover: La imagen mantiene su relación de aspecto y ocupa la dimensión indicada. La imagen se recortará para ajustarse.</li>
+                    <li>none: La imagen no se redimensiona</li>
+                    <li>scale-down: la imagen se reduce a la versión más pequeña de <code>none</code> o <code>contain</code></li>
+                </ul>
+                <table>
+                    <thead>
+                        <th>Propiedad</th>
+                        <th>Valores</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>object-fit</td>
+                            <td>fill | contain | cover | none | scale-down</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="https://www.w3schools.com/cssref/playdemo.php?filename=playcss_object-fit" target="_blank" class="link">Ejemplo de uso w3schools</a>
+            </article>
+            <article>
+                <h3>object-position</i></h3>
+                <p><i>Establece la posici&oacute;n de una imagen dentro de un contenedor.</i></p>
+                <p><i>El valor por defecto es 50% 50%</i></p>
+                <table>
+                    <thead>
+                        <th>Propiedad</th>
+                        <th>Valores</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>object-position</td>
+                            <td>&ltleft&gt &lttop&gt</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="https://www.w3schools.com/cssref/playdemo.php?filename=playcss_object-position" target="_blank" class="link">Ejemplo de uso w3schools</a>
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>

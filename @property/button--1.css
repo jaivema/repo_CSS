@@ -1,0 +1,78 @@
+:root {
+  --var-50 : #ffecec;
+  --var-100: #ffd4d4;
+  --var-200: #ffadad;
+  --var-300: #ff8787;
+  --var-400: #ff5b5b;
+  --var-500: #ff0000;
+  --var-600: #dc0000;
+  --var-700: #ad0000;
+  --var-800: #7a0000;
+  --var-900: #470000;
+  --var-950: #2d0000;
+}
+
+.button--1 {
+  position: relative;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+button:focus-visible {
+  outline:none;
+}
+
+.animate-border::after,
+.animate-border::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  background-image: conic-gradient(from var(--angle),
+      transparent 30%,
+      var(--var-50),
+      var(--var-100),
+      var(--var-200),
+      var(--var-300),
+      var(--var-400),
+      var(--var-500),
+      var(--var-600),
+      var(--var-700),
+      var(--var-800),
+      var(--var-900),
+      var(--var-950));
+  translate: -50% -50%;
+  z-index: -1;
+  padding: 1px;
+  border-radius: 4px;
+}
+
+.animate-border::before {
+  filter: blur(1.5rem);
+  opacity: .5;
+}
+
+.animate-border:hover::after,
+.animate-border:hover::before {
+  animation: 2s spin linear infinite;
+}
+.animate-border:focus-visible::after,
+.animate-border:focus-visible::before{
+  background-image: conic-gradient(from var(--angle),
+      red, indigo, red);
+      animation: 2s spin linear infinite;
+}
+button:focus-visible {
+  outline:none;
+}
+

@@ -1,0 +1,59 @@
+.layout{
+    background-color: #ccc;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: darkkhaki;
+    line-height: 100px;
+    text-align: center;
+    margin: 1px;
+}
+h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+.clear{
+    clear: both;
+}
+.box1{
+    float: left;
+}
+.box2{
+    float: left;
+}
+.box3{
+    float: right;
+}
+.box4{
+    float: right;
+}
+.box5{
+    float: none;
+}
+.box6{
+    float: none;
+}
+.box7{
+    float: inline-start;
+}
+.box8{
+    float: right;
+}
+.box9{
+    float: left;
+}
+.box10{
+    float: none;
+}
+.box11{
+    float: inline-start;
+}
+.box12{
+    float: inline-end;
+}
+footer p{
+    text-align: center;
+}

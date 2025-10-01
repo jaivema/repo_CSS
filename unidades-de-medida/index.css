@@ -1,0 +1,49 @@
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	min-height:100dvh;
+	font-size: 14px;
+}
+code {
+	font-family: Consolas, 'courier new';
+	background-color: bisque;
+	padding: 0 5px;
+}
+h1 {
+	font-size: 2rem;
+}
+h2 {
+	font-size: 1.5;
+}
+h3 {
+	font-size: 1.2rem;
+}
+body {
+	font-family: 'Courier New', Courier, monospace;
+}
+section {
+	margin-top: 18px;
+	margin: 0 auto;
+	max-width: 900px;
+}
+article {
+	margin-top: 12px;
+}
+table {
+	width: 650px;
+	border-collapse: collapse;
+}
+th,
+td {
+	border: 1px solid;
+	padding: 10px;
+}
+header {
+	width:100%;
+	color:white;
+	text-align: center;
+	border-bottom: 4px solid red;
+	background-color: black;
+}
