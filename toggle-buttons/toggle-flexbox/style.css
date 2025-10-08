@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  text-align: center;
+  font-size: 2rem;
+
+  & a {
+    text-decoration: none;
+    color: azure;
+    font-size: 2rem;
+    color: #39b23d;
+
+    &:hover {
+      color: #317433;
+    }
+  }
+}
+
+body {
+  min-height: 100vh;
+  background-color: rgb(70, 70, 70);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  color: azure;
+}
+
+.switch {
+  display: inline-flex;
+  align-items: center;
+  width: 500px;
+  height: 250px;
+  background: rgb(1, 1, 1);
+  border-radius: 1000px;
+  padding: 30px;
+  cursor: pointer;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  width: 200px;
+  height: 200px;
+  background: white;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+
+/* La magia de flex */
+.switch {
+  justify-content: flex-start;
+  transition: all 1s;
+}
+
+.switch input:checked + .slider {
+  background: white;
+  transition: all 1s;
+}
+
+/* 
+Alternativa moderna con :has() (soporte creciente en navegadores)
+:has() todavía no está soportado en todos los navegadores antiguos (pero sí en los modernos: Chrome, Edge, Safari, Firefox 121+).
+*/
+.switch:has(input:checked) {
+  background: #39b23d;
+  justify-content: flex-end;
+  transition: all 1s;
+}

@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  text-align: center;
+  font-size: 2rem;
+
+  & a {
+    text-decoration: none;
+    color: azure;
+    font-size: 2rem;
+    color: #39b23d;
+
+    &:hover {
+      color: #317433;
+    }
+  }
+}
+
+body {
+  min-height: 100vh;
+  background-color: rgb(70, 70, 70);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  color: azure;
+}
+
+.switch {
+  cursor: pointer;
+}
+
+.switch input {
+  display: none;
+}
+
+.state {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  /* Estado inicial */
+  width: 500px;
+  height: 250px;
+  background: rgb(1, 1, 1);
+  border-radius: 1000px;
+  padding: 30px;
+  transition: all 1s;
+}
+
+.slider {
+  width: 200px;
+  height: 200px;
+  background: white;
+  border-radius: 50%;
+  transition: all 1s;
+}
+
+/* El truco: el estado se propaga desde el input */
+.switch input:checked + .state {
+  background: #4caf50;
+  justify-content: flex-end;
+  transition: all 1s;
+}
