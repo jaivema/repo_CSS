@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="index.css" />
+	<title>CSS - imagenes</title>
+	<style>
+		html{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: .6px;
+}
+body,
+h1{
+    margin-top:0;
+    padding-top:0;
+}
+body{
+    background-color: rgb(194, 194, 194);
+}
+.layout__header {
+	color:white;
+	text-align: center;
+	border-bottom: 4px solid red;
+	background-color: black;
+    position:sticky;
+    top:-60px;
+}
+.article__header > h2{
+    padding-left: 20px;
+    background-color: gray;
+}
+blockquote{
+	margin-left: 20px;
+    padding-left: 20px;
+    font-style: italic;
+    border-left: 4px solid green;
+}
+table,
+th,
+td
+{
+    border:1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+}
+code{
+    background-color: lightgray;
+    padding: 5px;
+    border-radius: 5px;
+}
+a{
+    color:green;
+    text-decoration: none;
+}
+	</style>
+</head>
+
+<body>
+	<div class="layout">
+		<header class="layout__header">
+			<h1>Conceptos de CSS</h1>
+			<h2 class="sticky">Las imágenes</h2>
+		</header>
+		<main>
+			<article>
+				<header class="article__header">
+					<h2>object-fit</h2>
+					<p>Establece como se ajusta una imagen dentro de un contenedor.</p>
+					<blockquote>El valor por defecto es fill.</blockquote>
+				</header>
+
+				<section>
+					<h3>Valores disponibles</h3>
+					<ul>
+						<li>
+							<dfn title="relleno">fill</dfn>: Esta es la configuración predeterminada. La
+							imagen se redimensiona para ajustarse a la dimensión
+							especificada. Si es necesario, se estira o se comprime para
+							ajustarla.
+						</li>
+						<li>
+							<dfn title="contenido">contain</dfn>: La imagen mantiene su relación de aspecto,
+							pero se redimensiona para ajustarse a la dimensión dada.
+						</li>
+						<li>
+							<dfn title="recorta/cubre">cover</dfn>: La imagen mantiene su relación de aspecto y
+							ocupa la dimensión indicada. La imagen se recortará para
+							ajustarse.
+						</li>
+						<li><dfn title="nada">none</dfn>: La imagen no se redimensiona.</li>
+						<li>
+							<dfn title="reduce">scale-down</dfn>: la imagen se reduce a la versión más
+							pequeña de <code>none</code> o <code>contain</code>.
+						</li>
+					</ul>
+				</section>
+				<section>
+					<h3>Tabla de valores</h3>
+					<table>
+						<thead>
+							<tr>
+								<th>Propiedad</th>
+								<th>Valores</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>object-fit</td>
+								<td>fill | contain | cover | none | scale-down</td>
+							</tr>
+						</tbody>
+					</table>
+					<footer class="article__footer">
+						<p>
+							<a href="https://www.w3schools.com/cssref/playdemo.php?filename=playcss_object-fit">
+								w3schools - object-fit
+							</a>
+						</p>
+					</footer>
+				</section>
+			</article>
+			<article>
+				<header class="article__header">
+					<h2>object-position</h2>
+					<p>Establece la posición de una imagen dentro de un contenedor.</p>
+					<blockquote>El valor por defecto es 50% 50%.</blockquote>
+				</header>
+				<pre>
+					#myDIV {
+						height:300px;
+						padding:20px;
+						background-color:#FFFFFF;
+					}
+					img{
+						object-fit: none;
+						object-position: 60% 60%;
+					}
+					---
+					&lt;div id="myDIV"&gt;
+						&lt;img src="pineapple.jpg" alt="Pineapple" width="100" height="300"&gt;
+					&lt;/div&gt;
+				</pre>
+				<footer class="article__footer">
+					<p>
+						<a href="https://www.w3schools.com/cssref/playdemo.php?filename=playcss_object-position">
+							w3schools - object-position
+						</a>
+					</p>
+				</footer>
+			</article>
+		</main>
+	</div>
+</body>
+
+</html>

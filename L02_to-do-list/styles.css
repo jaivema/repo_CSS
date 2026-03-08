@@ -1,0 +1,72 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: blueviolet;
+}
+
+a:visited {
+  color: gray;
+}
+
+a:focus,
+a:hover,
+input[type="checkbox"]:focus {
+  outline: 2px dashed cadetblue;
+  color: cadetblue;
+}
+
+a:active {
+  color: brown;
+  outline: 2px dashed brown;
+}
+
+main {
+  background-color: beige;
+  border-radius: 2px;
+  box-shadow: 1px 1px 10px gray;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  padding-top: 20px;
+  color: dimgrey;
+}
+
+h1 {
+  text-align: center;
+}
+
+section {
+  margin: 0 auto;
+  padding: 20px;
+}
+
+ul {
+  padding-inline-start: 0px;
+}
+
+ul.todo-list {
+  list-style: none;
+}
+
+ul.todo-list > li {
+  line-height: 2;
+  background-color: gainsboro;
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+ul.sub-item {
+  padding-inline-start: 20px;
+  list-style-position: inside;
+  padding-bottom: 20px;
+  list-style-type: square;
+}
