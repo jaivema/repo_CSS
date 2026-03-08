@@ -65,7 +65,7 @@ ul.todo-list > li {
 }
 
 ul.sub-item {
-  padding-inline-start: 20px;
+  text-indent: 20px;
   list-style-position: inside;
   padding-bottom: 20px;
   list-style-type: square;
