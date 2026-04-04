@@ -1,0 +1,21 @@
+:root{
+    --color-link: darkkhaki;
+    --color-link-visited: gray;
+    --color-link-hover: blueviolet;
+    --color-link-active: blueviolet;
+}
+a:link{
+    color: var(--color-link);
+    text-decoration: none;
+}
+a:visited{
+    color: var(--color-link-visited);
+    text-decoration: none;
+}
+a:hover{
+    color: var(--color-link-hover);
+    text-decoration: none;
+}
+a:active{
+    color: var(--color-link-active);
+}
