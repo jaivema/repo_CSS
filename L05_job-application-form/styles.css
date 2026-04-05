@@ -1,0 +1,128 @@
+body {
+  font-family: system-ui, 'Segoe UI', Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-image: url(5386357.jpg);
+  color: #000000ba;
+}
+
+.container {
+  background-color: #ffffff9a;
+  width: 80%;
+  max-width: 600px;
+  min-width: 300px;
+  border-radius: 2px;
+  margin: 20px auto;
+  padding: 10px 20px;
+  box-shadow: 0 5px 15px black;
+}
+
+.center {
+  text-align: center;
+}
+
+input,
+textarea{
+  background-color: transparent;
+}
+
+input:first-of-type{
+  background-color: #55555530;
+}
+input:focus,
+textarea:focus {
+  border: 1px solid gray;
+}
+
+input:invalid,
+select:invalid,
+textarea:invalid {
+  border: 1px solid red;
+}
+
+input:valid,
+select:valid,
+textarea:valid {
+  border: 1px solid green;
+}
+
+input,
+textarea {
+  width: 95%;
+  border: 1px solid gray;
+  border-radius: 2px;
+  padding: 10px;
+}
+
+:is(input, textarea)::placeholder {
+  font-family: inherit;
+  font-size: inherit;
+  color: #000000aa;
+}
+
+fieldset {
+  border: 1px dashed gray;
+  border-radius: 2px;
+  margin: 20px 0;
+  padding: 20px;
+}
+
+fieldset legend {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+label {
+  font-size: 1.2rem;
+}
+
+label:not(.availability) {
+  display: block;
+  margin: 10px 0;
+}
+
+select {
+  width: 100%;
+  font-family: inherit;
+  font-size: 1rem;
+  color: #000000aa;
+  padding: 10px;
+  border-radius: 2px;
+  background-color: transparent;
+}
+
+input.time-radio-btn {
+  width: 20px;
+  height: 20px;
+  vertical-align: bottom;
+  appearance: none;
+  border-radius: 50%;
+  border-color: gray;
+}
+
+
+.radio-group input[type="radio"]:checked {
+  box-shadow: 1px 1px 5px green;
+  background-color: lightgreen;
+  border-color: gray;
+}
+
+input[type="radio"]:checked + label {
+  color: green;
+}
+
+.submit-btn {
+  width: 100%;
+  cursor: pointer;
+  background-color: orangered;
+  color: whitesmoke;
+  border: none;
+  border-radius: 2px;
+  padding: 20px 0;
+  font-size: 1.2rem;
+  display: block;
+  margin: 20px auto;
+  transition: background-color 0.3s ease-in;
+}
+
+button:hover {
+  background-color: green;
+}
