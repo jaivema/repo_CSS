@@ -4,13 +4,13 @@
     --color-link-visited: gray;
     --color-link-hover: black;
     --color-link-active: blueviolet;
-    --liear-gradient: 90deg, whitesmoke 10%,burlywood 20%, whitesmoke 99%;
+    --liear-gradient: 90deg, whitesmoke 10%,lightgray 20%, whitesmoke 99%;
     --box-shadow: 2px 2px 10px 1px black;
 }
 body{
     font-family: var(--font-family);
     letter-spacing: .75px;
-    background-color: lightgrey;
+    background: linear-gradient(var(--liear-gradient));
     min-width: 300px;
 }
 a{
@@ -31,7 +31,7 @@ a:active{
 section{
     padding: 20px;
     margin: 20px;
-    background: linear-gradient(var(--liear-gradient));
+    background-color: cornsilk;
     box-shadow: var(--box-shadow);
     border-radius: 2px;
     transition: transform 0.2s ease;
