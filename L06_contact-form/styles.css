@@ -1,0 +1,44 @@
+body{
+  font-family: Cambria, Cochin, 'Times New Roman', serif;
+  font-size: 16px;
+}
+.form-container{
+  border-radius: 2px;
+  background-color:#c0c0c090;
+  padding: 10px;
+  width: 300px;
+  margin:0 auto;
+  text-align: center;
+}
+label{
+  display:block;
+  margin: 10px;
+  color: #030303af;
+}
+input,textarea{
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: inherit;
+  color:#030303af;
+  background-color: #f0f8ff;
+  border: 1px solid #030303af;
+}
+textarea{
+  max-width: 90%;
+  min-width: 90%;
+}
+button{
+  width: 100%;
+  background-color: #030303af;
+  color: #fff;
+  border: 1px solid black; 
+  padding: 10px;
+  margin: 20px 0;
+  font-size: 1.2rem;
+  transition: background-color, color .2s ease;
+}
+button:hover{
+  background-color: #808080;
+  color: #030303af;
+}
